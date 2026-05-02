@@ -1,0 +1,20 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores básicos */
+:root {
+    --color-fondo: #f4f4f9;
+    --color-texto: #333333;
+    --color-primario: #007bff;
+    --color-secundario: #6c757d;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}

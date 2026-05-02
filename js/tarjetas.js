@@ -7,4 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.backgroundColor = randomColor;
         });
     }
+
+    const btnMatias = document.getElementById('btn-matias');
+    if (btnMatias) {
+        btnMatias.addEventListener('click', function () {
+            const randomColor = '#' + Math.floor(Math.random() * 15366).toString(16);
+            const tarjeta = document.querySelector('.tarjeta ');
+            if (tarjeta) {
+                tarjeta.style.backgroundColor = randomColor;
+            }
+        });
+    }
 });

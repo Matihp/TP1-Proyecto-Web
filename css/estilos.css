@@ -93,6 +93,12 @@ body {
     margin-bottom: 5px;
 }
 
+/* === ESTILOS BITÁCORA === */
+.contenedor-tabla {
+    overflow-x: auto;
+    margin: 20px;
+}
+
 /* === MEDIA QUERIES MATIAS (Mobile) === */
 @media (max-width: 400px) {
     .tarjeta {

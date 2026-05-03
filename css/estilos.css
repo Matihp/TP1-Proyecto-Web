@@ -93,7 +93,30 @@ body {
     margin-bottom: 5px;
 }
 
-/* === MEDIA QUERIE === */
+/* === ESTILOS BITÁCORA === */
+.contenedor-tabla {
+    overflow-x: auto;
+    margin: 20px;
+}
+
+/* === MEDIA QUERIES MATIAS (Mobile) === */
+@media (max-width: 400px) {
+    .tarjeta {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+}
 
 /* === MEDIA QUERIES MARIA (Tablet/Desktop) === */
 @media (min-width: 900px) {

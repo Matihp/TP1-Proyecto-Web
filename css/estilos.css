@@ -57,6 +57,7 @@ body {
     max-width: 800px;
 
 }
+
 .foto-perfil {
     width: 150px;
     height: 150px;
@@ -70,6 +71,7 @@ body {
     color: var(--color-primario);
 
 }
+
 .tarjeta p {
     text-align: center;
     margin-bottom: 15px;
@@ -86,8 +88,33 @@ body {
     padding-left: 20px;
     margin-bottom: 15px;
 }
+
 .tarjeta li {
     margin-bottom: 5px;
 }
 
 /* === MEDIA QUERIE === */
+
+/* === MEDIA QUERIES MARIA (Tablet/Desktop) === */
+@media (min-width: 900px) {
+    .tarjeta {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 30px;
+    }
+
+    .foto-perfil {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .tarjeta {
+        max-width: 1000px;
+    }
+}

@@ -45,21 +45,6 @@ body {
     color: var(--color-primario);
 }
 
-
-.contenedor-datos {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    align-self: flex-start;
-}
-
-.tarjeta .contenedor-datos p {
-    text-align: left;
-}
-
-
 /* === ESTILOS TARJETAS === */
 .tarjeta,
 .tarjeta-presentacion {
@@ -85,6 +70,19 @@ body {
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid var(--color-primario);
+}
+
+.contenedor-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.tarjeta .contenedor-datos p {
+    text-align: left;
 }
 
 .tarjeta h2,
@@ -158,6 +156,85 @@ footer {
 /* === ESTILOS CONTACTO Y PRINCIPAL === */
 main {
     padding: 20px;
+}
+
+/* Sección de bienvenida */
+.seccion-bienvenida {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.seccion-bienvenida h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.seccion-bienvenida p {
+    margin-bottom: 8px;
+}
+
+/* Sección del equipo */
+.seccion-equipo {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.seccion-equipo h2 {
+    text-align: center;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.contenedor-equipo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    min-height: 180px;
+    text-align: center;
+
+}
+
+.tarjeta-equipo h3 {
+    color: var(--color-primario);
+    margin-bottom: 8px;
+}
+
+
+.enlace-perfil {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.enlace-perfil:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de confirmación del formulario */
+#mensaje-enviado {
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 .seccion-contacto {

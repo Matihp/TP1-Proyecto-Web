@@ -45,8 +45,24 @@ body {
     color: var(--color-primario);
 }
 
+
+.contenedor-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.tarjeta .contenedor-datos p {
+    text-align: left;
+}
+
+
 /* === ESTILOS TARJETAS === */
-.tarjeta {
+.tarjeta,
+.tarjeta-presentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,8 +70,13 @@ body {
     border: 1px solid #cccccc;
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    width: 40%;
+    border-radius: 8px;
+}
 
+.seccion-tarjeta {
+    display: flex;
+    justify-content: center;
 }
 
 .foto-perfil {
@@ -66,31 +87,66 @@ body {
     border: 3px solid var(--color-primario);
 }
 
-.tarjeta h2 {
+.tarjeta h2,
+.tarjeta-presentacion h1,
+.nombre-persona {
     margin-bottom: 10px;
     color: var(--color-primario);
-
 }
 
-.tarjeta p {
+.tarjeta p,
+.dato-personal {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
-.tarjeta h3 {
+.tarjeta h3,
+.tarjeta-presentacion h2,
+.titulo-lista {
     margin-top: 15px;
     margin-bottom: 5px;
     align-self: flex-start;
 }
 
-.tarjeta ul {
+.tarjeta ul,
+.tarjeta-presentacion ul,
+.lista-items {
     align-self: flex-start;
     padding-left: 20px;
     margin-bottom: 15px;
 }
 
-.tarjeta li {
+.tarjeta li,
+.tarjeta-presentacion li,
+.item-lista {
     margin-bottom: 5px;
+}
+
+/* === ESTILOS BOTONES TARJETA === */
+#btn-matias,
+#btn-maria {
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#btn-matias:hover,
+#btn-maria:hover {
+    background-color: #0056b3;
+}
+
+/* === ESTILOS FOOTER === */
+footer {
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 /* === ESTILOS BITÁCORA === */
@@ -152,7 +208,9 @@ main {
 
 /* === MEDIA QUERIES MATIAS (Mobile) === */
 @media (max-width: 400px) {
-    .tarjeta {
+
+    .tarjeta,
+    .tarjeta-presentacion {
         padding: 10px;
         margin: 10px;
     }
@@ -164,6 +222,7 @@ main {
 
     .menu-principal ul {
         flex-direction: column;
+        align-items: center;
         gap: 10px;
         padding-left: 0;
     }
@@ -171,15 +230,10 @@ main {
 
 /* === MEDIA QUERIES MARIA (Tablet/Desktop) === */
 @media (min-width: 900px) {
-    .tarjeta {
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 30px;
-    }
 
-    .foto-perfil {
-        margin-right: 30px;
-        margin-bottom: 0;
+    .tarjeta,
+    .tarjeta-presentacion {
+        padding: 30px;
     }
 }
 
@@ -188,7 +242,8 @@ main {
         font-size: 18px;
     }
 
-    .tarjeta {
+    .tarjeta,
+    .tarjeta-presentacion {
         max-width: 1000px;
     }
 }

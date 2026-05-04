@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     --color-fondo: #f4f4f9;
     --color-texto: #333333;
@@ -14,7 +16,8 @@
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 /* Menú de Navegación */
